@@ -120,3 +120,88 @@ header{
 header #nav-paginas a:hover{
 	border-bottom: 2px solid #27033D;
 }
+
+/* estilização do footer */
+
+footer{
+	position: relative;
+	background-color: white;
+}
+
+footer .container{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15rem;
+	background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+footer h1{
+	color: #000000;
+	margin-bottom: 2rem;
+	padding: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+footer p{
+	color: #000000;
+}
+
+footer img{
+	width: 5rem;
+	height: 5rem;
+}
+
+footer .card-contato{
+	display: flex;
+	margin-bottom: 2rem;
+	padding: 0.5rem;
+}
+
+footer .card-contato img{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-right: 0.5rem;
+}
+
+footer .card-contato p{
+	color: #000000;
+	font-size: 1.4rem;
+	line-height: 150%;
+}
+
+footer #informacoes p{
+	color: #000000;
+	font-size: 1.4rem;
+	line-height: 150%;
+}
+
+footer #img-footer{
+	display: inline-block;
+}
+
+footer #img-footer img{
+	margin: 2rem;
+}
+
+#desenvolvimento p, #desenvolvimento p strong{
+	margin-top: 5rem;
+	text-align: center;
+	color: #000000;
+	font-size: 1.5rem;
+	line-height: 150%;
+}
+
+#topo-btn{
+	width: 70px;
+	height: 70px;
+	background-color: #17CD00;
+	border-radius: 35px;
+	position: fixed;
+	right: 30px;
+	bottom: 20px;
+	display: inline-block;
+}
