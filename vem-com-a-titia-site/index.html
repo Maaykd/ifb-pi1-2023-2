@@ -10,7 +10,13 @@
 		<meta name="author" content="Leonardo Machado, Maycon Douglas, Ellys Rebeca e Gustaco de Castro">
 		<meta name="description" content="Sex Shop - Loja focada na Saúde Sexual, e na integridade do seu público">
 		<meta name="keywords" content="SexShop,Brinquedos Eróticos,lubrificantes,Saúde Feminina,Saúde Sexual,Prazer,Satisfação">
+
+		<link
+		  rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		
 
 	</head>
 
@@ -60,11 +66,40 @@
 				</nav>
 					
 			</header>
+
 			<main>
-				<h1>slides de atualização</h1>
+
+				<div class="swiper-container">
+				   <div class="swiper-wrapper">
+				      <div class="swiper-slide"><img src="./img/slide1.png" alt="Slide 1"></div>
+				      <div class="swiper-slide"><img src="./img/slide2.png" alt="Slide 2"></div>
+				      <div class="swiper-slide"><img src="./img/slide3.png" alt="Slide 3"></div>
+				      <!-- Adicione mais slides conforme necessário -->
+				   </div>
+				   <!-- Adicione as setas de navegação (opcional) -->
+				   <div class="swiper-button-next"></div>
+				   <div class="swiper-button-prev"></div>
+				</div>
+
 			</main>
+
 			<section id="mais-vendidos">
-				<h1>slides de produtos</h1>
+
+				<h1>MAIS VENDIDOS</h1>
+				
+				<div class="swiper-container">
+				   <div class="swiper-wrapper">
+				      <div class="swiper-slide"><img src="./img/produto 1.png" alt="Slide 1"></div>
+				      <div class="swiper-slide"><img src="./img/produto 2.png" alt="Slide 2"></div>
+				      <div class="swiper-slide"><img src="./img/produto 3.png" alt="Slide 3"></div>
+				      <div class="swiper-slide"><img src="./img/produto 4.png" alt="Slide 4"></div>
+				      <div class="swiper-slide"><img src="./img/produto 5.png" alt="Slide 5"></div>
+				      <div class="swiper-slide"><img src="./img/produto 6.png" alt="Slide 6"></div>
+				   </div>
+				   
+				   <div class="swiper-button-next"></div>
+				   <div class="swiper-button-prev"></div>
+				</div>
 			</section>
 
 
@@ -102,9 +137,14 @@
 					<p>Desenvolvido por - <strong>Leonardo, Maycon, Gustavo, Ellys</strong> - 2023 </p>
 				</div>
 			</footer>
-			<div id="topo-btn">
 
-			</div>
+			<a href="#">
+				<div id="topo-btn">
+					<img src="./img/bt-topo.svg">
+				</div>
+			</a>
+
+			<script src="./js/script.js"></script>
 		</body>
 
 </html>
