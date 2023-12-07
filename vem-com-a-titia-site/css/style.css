@@ -269,3 +269,44 @@ body {
 	transition: color .3s ease;
    margin: 0px 0px 60px 0px;
 }
+
+/*informações*/ 
+
+#pag-informacoes {
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+#caixa-informacoes {
+    background-color: #FFFFFF;
+    height: 1600px;
+    width: 65%;
+    margin: 0 auto; 
+    border-radius: 10px;
+    padding: 60px;
+}
+#caixa-informacoes h2{
+    color: #000000;
+	margin-bottom: 2rem;
+	padding: 0.5rem;
+	margin-bottom: 1.5rem;
+    font-size: 2.8rem;}
+
+#caixa-informacoes h3{
+		color: #000000;
+		padding: 0.5rem;
+		margin-bottom: 1.5rem;
+		font-size: 2rem;}
+	
+#caixa-informacoes p{
+	font-family: 'Libre Caslon Display', serif;
+	color: #000000;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 150%;
+	transition: color .3s ease;
+   	margin: 0px 0px 50px 0px;
+}
+
