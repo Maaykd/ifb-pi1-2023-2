@@ -1,69 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Hahmlet:wght@100;300;400;500&family=Kaushan+Script&display=swap');
 
 /* Página no geral formatações iniciais */
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
+	
 }
 
-html{
+html {
 	background-color: #27033D;
 	font-size: 62.5%;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
-ul{
+ul {
 	list-style: none;
 }
 
-body{
+body {
 	height: 100vh;
 	width: 100vw;
 }
 
-header{
+header {
 	width: 100%;
 }
 
 /* estilização do Nav-topo o menu com a barra de pesquisa */
 
 #nav-topo {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+	width: 100%;
 }
 
 .nav-section {
-    margin-right: 20px;
+	margin-right: 20px;
 }
 
 
-.logo{
+.logo {
 	width: 10rem;
 	height: 10rem;
 }
 
-#pesquisar{
+#pesquisar {
 	position: relative;
 	display: inline-block;
 }
 
-#pesquisar img{
+#pesquisar img {
 	width: 3rem;
 	height: 3rem;
 }
 
-.search-box{
+.search-box {
 	height: 40px;
 	width: 80rem;
 	padding: 10px;
@@ -72,7 +73,7 @@ header{
 	font-size: 1.6rem;
 }
 
-.search-btn{
+.search-btn {
 	position: absolute;
 	top: 50%;
 	right: 1.3rem;
@@ -81,24 +82,29 @@ header{
 }
 
 
-#atendimento img, #cadastro img, #carrinho img{
+#atendimento img,
+#cadastro img,
+#carrinho img {
 	width: 3rem;
 	height: 3rem;
 	margin-right: 2px;
 }
 
-#atendimento, #cadastro, #carrinho, #pesquisar{
+#atendimento,
+#cadastro,
+#carrinho,
+#pesquisar {
 	display: flex;
 	padding: 1rem;
 }
 
-.container{
+.container {
 	display: flex;
 }
 
 /* estilização do Nav-paginas o menu responsável pela navegação geral do site */
 
-#nav-paginas{
+#nav-paginas {
 	margin-top: 1rem;
 	padding: 1rem;
 	background-color: white;
@@ -108,7 +114,7 @@ header{
 	gap: 4.7rem;
 }
 
-#nav-paginas a{
+#nav-paginas a {
 	font-family: 'Libre Caslon Display', serif;
 	color: #000000;
 	font-size: 1.4rem;
@@ -117,77 +123,78 @@ header{
 	transition: color .3s ease;
 }
 
-header #nav-paginas a:hover{
+header #nav-paginas a:hover {
 	border-bottom: 2px solid #27033D;
 }
 
 /* estilização do footer */
 
-footer{
+footer {
 	position: relative;
 	background-color: white;
 }
 
-footer .container{
+footer .container {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 15rem;
 	background-color: white;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0.5rem;
-    width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0.5rem;
+	width: 100%;
 }
 
-footer h1{
+footer h1 {
 	color: #000000;
 	margin-bottom: 2rem;
 	padding: 0.5rem;
 	margin-bottom: 1.5rem;
 }
 
-footer p{
+footer p {
 	color: #000000;
 }
 
-footer img{
+footer img {
 	width: 5rem;
 	height: 5rem;
 }
 
-footer .card-contato{
+footer .card-contato {
 	display: flex;
 	margin-bottom: 2rem;
 	padding: 0.5rem;
 }
 
-footer .card-contato img{
+footer .card-contato img {
 	width: 1.5rem;
 	height: 1.5rem;
 	margin-right: 0.5rem;
 }
 
-footer .card-contato p{
+footer .card-contato p {
 	color: #000000;
 	font-size: 1.4rem;
 	line-height: 150%;
 }
 
-footer #informacoes p{
+footer #informacoes p {
 	color: #000000;
 	font-size: 1.4rem;
 	line-height: 150%;
 }
 
-footer #img-footer{
+footer #img-footer {
 	display: inline-block;
 }
 
-footer #img-footer img{
+footer #img-footer img {
 	margin: 2rem;
 }
 
-#desenvolvimento p, #desenvolvimento p strong{
+#desenvolvimento p,
+#desenvolvimento p strong {
 	margin-top: 5rem;
 	text-align: center;
 	color: #000000;
@@ -195,7 +202,7 @@ footer #img-footer img{
 	line-height: 150%;
 }
 
-#topo-btn{
+#topo-btn {
 	width: 70px;
 	height: 70px;
 	background-color: #17CD00;
@@ -210,62 +217,187 @@ footer #img-footer img{
 /*estilização página login*/
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #27033D;
-  height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: #27033D;
+	height: 100vh;
 }
+
 #login .container #login-row #login-column #login-box {
-  margin-top: 120px;
-  max-width: 600px;
-  height: 320px;
-  border: 1px solid #9C9C9C;
-  background-color:#9747FF	;
+	margin-top: 120px;
+	max-width: 600px;
+	height: 320px;
+	border: 1px solid #9C9C9C;
+	background-color: #9747FF;
 }
+
 #login .container #login-row #login-column #login-box #login-form {
-  padding: 30px;
+	padding: 30px;
 }
+
 #login .container #login-row #login-column #login-box #login-form #register-link {
-  margin-top: -85px;
+	margin-top: -85px;
 }
 
 /* BLOG */
 
 #blog {
-    color: #ffffff; 
-    text-align: center;
-    padding: 20px;
-    font-size: 3rem;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	font-size: 3rem;
 }
 
 #caixa {
-    background-color: #FFFFFF;
-    height: 1600px;
-    width: 65%;
-    margin: 0 auto; 
-    border-radius: 10px;
-    padding: 60px;
+	background-color: #FFFFFF;
+	height: 1600px;
+	width: 65%;
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 60px;
 }
 
-#caixa img{
-    width: 100%;
+#caixa img {
+	width: 100%;
 }
 
-.texto-blog h2{
-    color: #000000;
+.texto-blog h2 {
+	color: #000000;
 	margin-bottom: 2rem;
 	padding: 0.5rem;
 	margin-bottom: 1.5rem;
-    font-size: 2.6rem;
+	font-size: 2.6rem;
 
 }
 
-.texto-blog p{
-    font-family: 'Libre Caslon Display', serif;
+.texto-blog p {
+	font-family: 'Libre Caslon Display', serif;
 	color: #000000;
 	font-size: 2rem;
 	font-weight: bold;
 	line-height: 150%;
 	transition: color .3s ease;
-   margin: 0px 0px 60px 0px;
+	margin: 0px 0px 60px 0px;
 }
+
+
+/* Estilização da página de fetiches */
+
+#main-fetiches {
+	width: 100%;
+	height: 300px;
+
+
+}
+
+#texto-fetiches {
+	font-family: 'Hahmlet';
+	font-weight: 400;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#texto2-fetiches {
+	font-family: 'Habibi';
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 40px;
+	font-style: normal;
+	line-height: normal;
+	flex-shrink: 0;
+}
+
+.filtro-box {
+	width: 300px;
+	
+	height: 40px;
+	
+	background-color: #C9C9C9;
+	margin-left: 640px;
+	margin-top: 50px;
+	border-radius: 8px;
+
+}
+
+#texto-filtro {
+	color: #000;
+
+	text-align: center;
+	font-family: Habibi;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding: 8px;
+}
+
+.cards-container {
+	display: flex;
+  justify-content: space-evenly; 
+  margin-top: 10px;
+  align-items: center; 
+}
+
+
+
+.card {
+	display: grid;
+	justify-content: space-evenly;
+	background-color: #17CD00 ;
+	width: 210px;
+	height: 360px;
+	border-radius: 12px;
+	box-shadow: 4px 4px 12px #615c5caa;
+	margin-left: 60px;
+
+}
+
+.card h1 {
+	font-size: 1.9rem;
+	text-align: center;
+	margin-top: -80px;
+}
+
+.card h2 {
+	font-size: 1rem;
+	color: 000;
+	text-align: center;
+	margin-top: 10px;
+}
+	
+#preco-fetiches {
+	font-size: 1.6rem;
+	color: 000;
+	margin-left: 66px;
+	margin-top: 8px;
+}
+
+.card button {
+	background-color: #fff;
+	height: 30px;
+	border: none;
+	padding: 4px;
+	width: 80%;
+	color: #000;
+	font-size: 1..4rem;
+	font-weight: bold;
+	margin-left: 19px;
+	margin-top: 19px;
+	border-radius: 25px;
+}
+
+.card button:hover {
+	background-color: #27033D;
+	cursor: pointer;
+	color: #fff;
+}
+
+#img-card {
+width: 100%;
+height: 70%;
+border-radius: 12px;
+}
+	
+	
