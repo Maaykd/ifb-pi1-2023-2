@@ -130,45 +130,309 @@ header #nav-paginas a:hover {
 /*estilização do primeiro carrossel de slides*/
 
 
-.swiper-container {
-    width: 100%;
-    margin: auto;
+main{}
+
+.slide{
+	margin: 0 auto;
+	width: 1440px;
+	height: 650px;
+	overflow: hidden;
+	transition: all 0.4s;
 }
 
-.swiper-slide img {
-    width: 100%;
-    height: auto;
+.slides{
+	display: flex;
 }
 
-.swiper-button-next, .swiper-button-prev{
-	color: #17CD00;
+
+.image img{
+	width: 1440px;
+	height: 650px;
 }
 
+.image .slide-content {
+	margin-left: 50rem;
+	position: absolute;
+  text-align: center;
+  color: #ffffff;
+  top: 50%;
+}
+
+.image .slide-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.image .slide-content p {
+  font-size: 1.6rem;
+  margin-bottom: 10rem;
+}
+
+.image .slide-content .card-btn {
+	margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  padding: 10px;
+  width: 40%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #000000;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image .slide-content .card-btn:hover {
+  background-color: #127D00;
+}
+
+
+#atual{
+	transition: all 2s;
+}
+
+.btn-navegar{
+	position: absolute;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-top: -0.5rem;
+}
+
+#voltar{
+	top: 50%;
+	left: 10%;
+}
+
+#proximo{
+	top: 50%;
+	right: 9%;
+}
+
+.balls{
+	position: absolute;
+	width: 1440px;
+	display: flex;
+	justify-content: center;
+	margin-top: -45px;
+
+
+}
+
+.balls div{
+	transition: all 0.5s;
+	padding: 6px;
+	border-radius: ;
+	width: 40px;
+	height: 5px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.balls div:hover{
+	background: #17CD00;
+}
+
+.img-atual{
+	transition: all 0.5s;
+	background: #17CD00;
+}
 
 /*estilização do segundo carrossel de slides*/
 
+#mais-vendidos{
+	margin-top: 13rem;
+}
+
 #mais-vendidos h1{
 	text-align: center;
+}
+
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+.product-container {
 	margin-top: 10rem;
-	font-size: 2.5rem;
+	position: relative;
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
-#mais-vendidos .swiper-slide img {
-    width: 100%;
-    height: auto;
+.product-container::-webkit-scrollbar {
+  display: none;
 }
 
-#mais-vendidos .swiper-container {
-	display: flex;
-    width: 20%;
-    margin: auto;
-    padding: 5rem;
-    margin-top: 10rem;
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
 }
 
- #mais-vendidos .swiper-button-next, #mais-vendidos .swiper-button-prev{
-	color: #17CD00;
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
 }
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+
+.card-btn {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 40%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #000000;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #17CD00;
+  color: #000000;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.product-brand {
+  text-transform: uppercase;
+}
+
+.product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
 
 /* estilização do footer */
 
