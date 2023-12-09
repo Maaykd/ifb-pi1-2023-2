@@ -9,14 +9,9 @@
 		<meta charset="utf-8">
 		<meta name="author" content="Leonardo Machado, Maycon Douglas, Ellys Rebeca e Gustaco de Castro">
 		<meta name="description" content="Sex Shop - Loja focada na Saúde Sexual, e na integridade do seu público">
-		<meta name="keywords" content="SexShop,Brinquedos Eróticos,lubrificantes,Saúde Feminina,Saúde Sexual,Prazer,Satisfação">
+		<meta name="keywords" content="SexShop,Brinquedos Eróticos,lubrificantes,Saúde Feminina,Saúde Sexual,Prazer,Satisfação"/>
 
-		<link
-		  rel="stylesheet"
-		  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		
 
 	</head>
 
@@ -42,7 +37,7 @@
 					    </div>
 
 					    <div class="nav-section" id="cadastro">
-							<a href="Login.html">
+					        <a href="#">
 					            <img src="./img/cadastro.svg" alt="Cadastro">
 					        </a>
 					        <p>Olá, Bem-vindo(a)<br/> <a href="#"><strong>Entre</strong></a> ou <a href="#"><strong>Cadastre-se</strong></a></p>
@@ -58,28 +53,61 @@
 				</div>
 					
 				<nav id="nav-paginas">
-					<a href="index.html">INICIO</a>
+						<a href="#">PRODUTOS</a>
 						<a href="#">LUBRIFICANTES</a>
-						<a href="fetiches.html">FETICHES</a>
+						<a href="#">FETICHES</a>
 						<a href="#">VIBRADORES</a>
-						<a href="blog.html">BLOG</a>
-						<a href="informacoes.html">INFORMAÇÕES</a>
+						<a href="#">SOBRE</a>
 				</nav>
 					
 			</header>
 
 			<main>
 
-				<div class="swiper-container">
-				   <div class="swiper-wrapper">
-				      <div class="swiper-slide"><img src="./img/slide1.png" alt="Slide 1"></div>
-				      <div class="swiper-slide"><img src="./img/slide2.png" alt="Slide 2"></div>
-				      <div class="swiper-slide"><img src="./img/slide3.png" alt="Slide 3"></div>
-				      <!-- Adicione mais slides conforme necessário -->
-				   </div>
-				   <!-- Adicione as setas de navegação (opcional) -->
-				   <div class="swiper-button-next"></div>
-				   <div class="swiper-button-prev"></div>
+				<div class="slide">
+
+					<div class="slides">
+
+						<div id="voltar" class="btn-navegar">
+							<img src="./img/seta-voltar.svg">
+						</div>
+						<div id="proximo" class="btn-navegar">
+							<img src="./img/seta-proximo.svg">
+						</div>
+
+						<div id="atual" class="image">
+							  <img src="./img/slide1.png" alt="primeira imagem do slide">
+							  <div class="slide-content">
+							    <h2>Título do Slide 1</h2>
+							    <p>Descrição do Slide 1</p>
+							    <button class="card-btn">Botão 1</button>
+							  </div>
+						</div>
+						<div class="image">
+							  <img src="./img/slide2.png" alt="segunda imagem do slide">
+							  <div class="slide-content">
+							    <h2>Título do Slide 2</h2>
+							    <p>Descrição do Slide 2</p>
+							    <button class="card-btn">Botão 2</button>
+							  </div>
+						</div>
+						<div class="image">
+							  <img src="./img/slide3.png" alt="terceira imagem do slide">
+							  <div class="slide-content">
+							    <h2>Título do Slide 3</h2>
+							    <p>Descrição do Slide 3</p>
+							   	<button class="card-btn">Botão 3</button>
+							  </div>
+						</div>
+						
+					</div>
+
+					<div class="balls">
+						<div class="img-atual" id="0"></div>
+						<div id="1"></div>
+						<div id="2"></div>
+					</div>
+				 
 				</div>
 
 			</main>
@@ -87,20 +115,88 @@
 			<section id="mais-vendidos">
 
 				<h1>MAIS VENDIDOS</h1>
-				
-				<div class="swiper-container">
-				   <div class="swiper-wrapper">
-				      <div class="swiper-slide"><img src="./img/produto 1.png" alt="Slide 1"></div>
-				      <div class="swiper-slide"><img src="./img/produto 2.png" alt="Slide 2"></div>
-				      <div class="swiper-slide"><img src="./img/produto 3.png" alt="Slide 3"></div>
-				      <div class="swiper-slide"><img src="./img/produto 4.png" alt="Slide 4"></div>
-				      <div class="swiper-slide"><img src="./img/produto 5.png" alt="Slide 5"></div>
-				      <div class="swiper-slide"><img src="./img/produto 6.png" alt="Slide 6"></div>
-				   </div>
-				   
-				   <div class="swiper-button-next"></div>
-				   <div class="swiper-button-prev"></div>
+					
+				<div class="pre-btn">
+					<img src="./img/seta-voltar.svg">
 				</div>
+				<div class="nxt-btn">
+					<img src="./img/seta-proximo.svg">
+				</div>
+
+				<div class="product-container">
+						<div class="product-card">
+			                <div class="product-image">
+			                    <span class="discount-tag">50% off</span>
+			                    <img src="./img/produto 1.png" class="product-thumb" alt="">
+			                    <button class="card-btn">comprar</button>
+			                </div>
+			                <div class="product-info">
+			                    <h2 class="product-brand">Algemas</h2>
+			                    <p class="product-short-description">descrição para o produto...</p>
+			                    <span class="price">$20</span><span class="actual-price">$40</span>
+			                </div>
+			            </div>
+			            <div class="product-card">
+			                <div class="product-image">
+			                    <span class="discount-tag">50% off</span>
+			                    <img src="./img/produto 2.png" class="product-thumb" alt="">
+			                    <button class="card-btn">comprar</button>
+			                </div>
+			                <div class="product-info">
+			                    <h2 class="product-brand">chicote</h2>
+			                    <p class="product-short-description">descrição para o produto...</p>
+			                    <span class="price">$20</span><span class="actual-price">$40</span>
+			                </div>
+			            </div>
+			            <div class="product-card">
+			                <div class="product-image">
+			                    <span class="discount-tag">50% off</span>
+			                    <img src="./img/produto 3.png" class="product-thumb" alt="">
+			                    <button class="card-btn">comprar</button>
+			                </div>
+			                <div class="product-info">
+			                    <h2 class="product-brand">vibrador</h2>
+			                    <p class="product-short-description">descrição para o produto...</p>
+			                    <span class="price">$20</span><span class="actual-price">$40</span>
+			                </div>
+			            </div>
+			            <div class="product-card">
+			                <div class="product-image">
+			                    <span class="discount-tag">50% off</span>
+			                    <img src="./img/produto 4.png" class="product-thumb" alt="">
+			                    <button class="card-btn">comprar</button>
+			                </div>
+			                <div class="product-info">
+			                    <h2 class="product-brand">vibrador</h2>
+			                    <p class="product-short-description">descrição para o produto...</p>
+			                    <span class="price">$20</span><span class="actual-price">$40</span>
+			                </div>
+			            </div>
+			            <div class="product-card">
+			                <div class="product-image">
+			                    <span class="discount-tag">50% off</span>
+			                    <img src="./img/produto 5.png" class="product-thumb" alt="">
+			                    <button class="card-btn">comprar</button>
+			                </div>
+			                <div class="product-info">
+			                    <h2 class="product-brand">lubrificante</h2>
+			                    <p class="product-short-description">descrição para o produto...</p>
+			                    <span class="price">$20</span><span class="actual-price">$40</span>
+			                </div>
+			            </div>
+			            <div class="product-card">
+			                <div class="product-image">
+			                    <span class="discount-tag">50% off</span>
+			                    <img src="./img/produto 6.png" class="product-thumb" alt="">
+			                    <button class="card-btn">comprar</button>
+			                </div>
+			                <div class="product-info">
+			                    <h2 class="product-brand">sugador</h2>
+			                    <p class="product-short-description">descrição para o produto...</p>
+			                    <span class="price">$20</span><span class="actual-price">$40</span>
+			                </div>
+			            </div>
+			    </div>
 			</section>
 
 
@@ -145,7 +241,6 @@
 				</div>
 			</a>
 
-			<script src="./js/script.js"></script>
 		</body>
-
+		<script src="./js/script.js"></script>
 </html>
